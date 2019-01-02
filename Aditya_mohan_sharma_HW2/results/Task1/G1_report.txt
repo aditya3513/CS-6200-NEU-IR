@@ -1,0 +1,5 @@
+Graph G1
+Number of pages with no in-links = 0
+Number of pages with no out-links = 110996
+Max In degree = 587
+Max Out degree = 1845.0

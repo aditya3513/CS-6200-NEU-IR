@@ -1,0 +1,1 @@
+For CS6200 we had to create a search engine step by step and this was broken down into 4 assignments, solution to all these assignments are in this repo, please refer to readme.txt in each folder to understand what it does and how to run.

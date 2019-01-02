@@ -1,0 +1,7 @@
+when we use d  = 0.5
+it takes less iterations to converge, the L1 norm value is less and same or newPR summation.
+Top 5 pages are same in both the cases but lower pages are different because they have lesser number of inlinks and hence we see huge changes.
+
+when d= 0.65
+it takes less iterations to converge, the L1 norm value is less and same or newPR summation.
+Top 5 pages are same in both the cases but lower pages are different because they have lesser number of inlinks and hence we see huge changes.

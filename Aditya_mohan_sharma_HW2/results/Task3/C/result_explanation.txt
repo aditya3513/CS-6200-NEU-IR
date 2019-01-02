@@ -1,0 +1,7 @@
+pros:
+- it is faster to run, since there is less computation and it does more discovery based on links of the current page rather than considering other factors.
+
+
+cons:
+- results can change by changing a graph by even a bit, high dependency of structure.
+- many pages can have similar inlink ount so no way to differentiate between them.

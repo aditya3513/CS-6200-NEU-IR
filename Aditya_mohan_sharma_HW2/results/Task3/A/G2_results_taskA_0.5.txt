@@ -1,0 +1,36 @@
+
+------------------------------------
+Iteration = 0
+L1 norm value = 0.00999667848800721
+Convergence Step = 0
+newPR sum = 1.0000000000000364
+
+------------------------------------
+Iteration = 1
+L1 norm value = 0.0010758917208988834
+Convergence Step = 0
+newPR sum = 0.9999999999999981
+
+------------------------------------
+Iteration = 2
+L1 norm value = 0.0001970257375109126
+Convergence Step = 1
+newPR sum = 0.9999999999999793
+
+------------------------------------
+Iteration = 3
+L1 norm value = 3.999927722056892e-05
+Convergence Step = 2
+newPR sum = 0.9999999999999245
+
+------------------------------------
+Iteration = 4
+L1 norm value = 8.233605179685448e-06
+Convergence Step = 3
+newPR sum = 0.9999999999999303
+
+------------------------------------
+Iteration = 5
+L1 norm value = 1.706012296026319e-06
+Convergence Step = 4
+newPR sum = 0.9999999999999957

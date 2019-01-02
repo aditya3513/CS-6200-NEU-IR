@@ -1,0 +1,1 @@
+when we run it for 4 iterations, towards the ends the L1 norm values are similar maybe due to the fact that we ran bfs with max depth that was close to the given iteraton length

@@ -1,0 +1,18 @@
+for focused crawling we use following method:
+	
+	1) we take our origin that is the first node and get all it child.
+	2) now we check each of its child if it contains the given keyword in its href value or the text of the anchor tag.
+	3) if it exists then we add this url in the next_depth_url_list, else we skip it, while we do this we only add unique values to all lists to make sure we dont repeat any traversal.
+	4) once we have all the items of next depth we go to next item of the frontier and do the same things till we have nothing left in frontier,
+	5) once the frontier (Queue) is empty we increase depth and set frontier equal to next_depth_url_list and next_depth_url_list to empty array
+
+
+	we do the keyword match using regex i.e re library and check if the keyword exists in the href or anchor tag text (case insensitively)
+
+refer to code in file: task3.py
+
+
+to run this file run: "python task3.py", before doing this create the folder "html_files_q3"
+
+it will generate a file "visited_link_file_q3.txt" and create html files in "html_files_q3"
+

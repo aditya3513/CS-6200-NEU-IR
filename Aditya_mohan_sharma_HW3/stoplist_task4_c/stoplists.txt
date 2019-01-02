@@ -1,0 +1,65 @@
+for the N=1, initial stop list is:
+Threshold: 22
+-----------------
+the 244
+of 143
+carbon 116
+and 107
+to 96
+a 75
+emissions 61
+footprint 60
+for 60
+in 57
+is 45
+by 37
+or 35
+as 33
+are 26
+from 25
+can 25
+be 23
+co2 22
+that 22
+
+but since some of important words showed up like "carbon, emissions, footprint" due to their high frequency. We can remove them manually and use this stop list after manual reduction while we check for punctuations on words and remove words there ate kept.
+##################################
+for N=2, initial stop list:
+threshold: 13
+---------------------
+carbon footprint 49
+the carbon 26
+of the 25
+carbon dioxide 17
+in the 17
+of carbon 15
+to the 13
+
+
+This time it was hard to decide the threshold as with 2grams, the words are in together and there can be cases where a phrase is being repeated again like "carbon footprint, carbon dioxide" since its is the title. Secondly there are cases where "carbon" is being used a lot and in conjunction with other words which makes it appear in stop list, We can manually remove there words from stop list
+
+##################################
+for N=3, initial stop list:
+threshold: Not found
+---------------------
+initial list in order of frequency looks like:
+
+the carbon footprint 18
+carbon footprint of 13
+of carbon dioxide 8
+the voluntary market 8
+a carbon footprint 6
+carbon footprint is 6
+the kyoto protocol 5
+cers and erus 5
+in the voluntary 5
+carbon dioxide equivalent 4
+the amount of 4
+
+Here frequency of terms reduces as we are clubbing values together and making phrases. It gets more difficult to create a stop list. if we choose a threshold like 8, it make phrases containing "carbon footprint" part of stop list which will give incorrect results.
+
+EXPLANATION:
+For choosing the Threshold we look at the term Freq table and check which words have really high frequency, since list if sorted in order Descending order of Freq. We can look at top of list to determine the stop list.
+
+Its really important to choose correct Threshold as if its too low, we will have lost of stop words, if too high then too little stop words.
+

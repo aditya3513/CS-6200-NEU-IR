@@ -1,0 +1,133 @@
+- Query 1 vs 2: carbon emission vs cutting carbon emission
+	
+	Q1 results:
+		1 Q0 Carbon_intensity 1 -9.279150829372043 LMDirichlet
+		1 Q0 Carbon_footprint 2 -9.806828502766908 LMDirichlet
+		1 Q0 Carbon_credit 3 -9.971060258245476 LMDirichlet
+		1 Q0 Emissions_Trading 4 -10.045059195232856 LMDirichlet
+		1 Q0 Carbon_offset 5 -10.074606501983634 LMDirichlet
+
+	Q2 results:
+		2 Q0 Carbon_footprint 1 -18.387399083887374 LMDirichlet
+		2 Q0 Carbon_offset 2 -18.924651780955205 LMDirichlet
+		2 Q0 Emissions_trading 3 -19.564304216521162 LMDirichlet
+		2 Q0 Carbon 4 -19.698472409188582 LMDirichlet
+		2 Q0 Climate_change_mitigation 5 -19.733750893910397 LMDirichlet
+
+	comparison:
+		3 documents are same in both the results [Carbon_footprint, Carbon_offset, Emissions_Trading], query 1 is substring od query 2 so even results are similar.
+
+
+- Query 2 vs 3: cutting carbon emission vs flexible dieting
+
+	Q2 results:
+		2 Q0 Carbon_footprint 1 -18.387399083887374 LMDirichlet
+		2 Q0 Carbon_offset 2 -18.924651780955205 LMDirichlet
+		2 Q0 Emissions_trading 3 -19.564304216521162 LMDirichlet
+		2 Q0 Carbon 4 -19.698472409188582 LMDirichlet
+		2 Q0 Climate_change_mitigation 5 -19.733750893910397 LMDirichlet
+
+	Q3 results:
+		3 Q0 Carbon_diet 1 -17.386552853187908 LMDirichlet
+		3 Q0 Excitation_(magnetic) 2 -21.182290892813132 LMDirichlet
+		3 Q0 Caulking 3 -21.182290892813132 LMDirichlet
+		3 Q0 Carbon_accounting 4 -21.267476654143536 LMDirichlet
+		3 Q0 Enterprise_carbon_accounting 5 -21.271298554790626 LMDirichlet
+
+	comparison:
+		No document is common among both queries, queries are also not similar.
+
+- Query 3 vs 4: flexible dieting vs flexible dieting and vegetarianism
+
+	Q3 results:
+		3 Q0 Carbon_diet 1 -17.386552853187908 LMDirichlet
+		3 Q0 Excitation_(magnetic) 2 -21.182290892813132 LMDirichlet
+		3 Q0 Caulking 3 -21.182290892813132 LMDirichlet
+		3 Q0 Carbon_accounting 4 -21.267476654143536 LMDirichlet
+		3 Q0 Enterprise_carbon_accounting 5 -21.271298554790626 LMDirichlet
+
+	Q4 results:
+		4 Q0 Carbon_diet 1 -36.619895138891835 LMDirichlet
+		4 Q0 Caulking 2 -40.038078146884764 LMDirichlet
+		4 Q0 Carbon_accounting 3 -40.28234948362059 LMDirichlet
+		4 Q0 Enterprise_carbon_accounting 4 -40.28999328491477 LMDirichlet
+		4 Q0 Rock_crawling 5 -40.343300987034446 LMDirichlet
+
+	comparison:
+		4 common documents in the results, simce query 3 is subquery of query 4 so we see even the results are similar (even the orderof occurance).
+
+- Query 4 vs 5: flexible dieting and vegetarianism vs information on pest control in greenhouse
+	
+	Q4 results:
+		4 Q0 Carbon_diet 1 -36.619895138891835 LMDirichlet
+		4 Q0 Caulking 2 -40.038078146884764 LMDirichlet
+		4 Q0 Carbon_accounting 3 -40.28234948362059 LMDirichlet
+		4 Q0 Enterprise_carbon_accounting 4 -40.28999328491477 LMDirichlet
+		4 Q0 Rock_crawling 5 -40.343300987034446 LMDirichlet
+
+	Q5 results:
+		5 Q0 Climate_change_and_agriculture 1 -35.91796094521033 LMDirichlet
+		5 Q0 Environmental_impact_of_agriculture 2 -37.22519026507314 LMDirichlet
+		5 Q0 Sustainability_organizations 3 -38.633856314242955 LMDirichlet
+		5 Q0 Global_warming_and_deforestation 4 -38.80383817292856 LMDirichlet
+		5 Q0 Climate_change_in_the_United_States 5 -38.96618841849428 LMDirichlet
+
+	comparison:
+		Nor the queries are similar not the results.
+
+- Query 5 vs 6: information on pest control in greenhouse vs pest control greenhouse
+
+	Q5 results:
+		5 Q0 Climate_change_and_agriculture 1 -35.91796094521033 LMDirichlet
+		5 Q0 Environmental_impact_of_agriculture 2 -37.22519026507314 LMDirichlet
+		5 Q0 Sustainability_organizations 3 -38.633856314242955 LMDirichlet
+		5 Q0 Global_warming_and_deforestation 4 -38.80383817292856 LMDirichlet
+		5 Q0 Climate_change_in_the_United_States 5 -38.96618841849428 LMDirichlet
+
+	Q6 results:
+		6 Q0 Climate_change_and_agriculture 1 -20.486906018919818 LMDirichlet
+		6 Q0 Environmental_impact_of_agriculture 2 -21.090667177654314 LMDirichlet
+		6 Q0 Global_warming_and_deforestation 3 -22.64051211720432 LMDirichlet
+		6 Q0 Population_dynamics 4 -23.38729830013288 LMDirichlet
+		6 Q0 Climate_change_in_the_United_States 5 -23.39053203007828 LMDirichlet
+
+	comparison:
+		4 documents are same and mostly because of the word "greenhouse"
+
+- Query 6 vs 7: pest control greenhouse vs greenhouse apples apple
+
+	Q6 results:
+		6 Q0 Climate_change_and_agriculture 1 -20.486906018919818 LMDirichlet
+		6 Q0 Environmental_impact_of_agriculture 2 -21.090667177654314 LMDirichlet
+		6 Q0 Global_warming_and_deforestation 3 -22.64051211720432 LMDirichlet
+		6 Q0 Population_dynamics 4 -23.38729830013288 LMDirichlet
+		6 Q0 Climate_change_in_the_United_States 5 -23.39053203007828 LMDirichlet
+
+	Q7 results:
+		7 Q0 List_of_bacon_dishes 1 -23.62621915522039 LMDirichlet
+		7 Q0 Food_miles 2 -25.672510840419683 LMDirichlet
+		7 Q0 Tanbark 3 -27.058765160746255 LMDirichlet
+		7 Q0 Julia_Gillard 4 -28.34144905694432 LMDirichlet
+		7 Q0 Ticker_symbol 5 -28.880538070092786 LMDirichlet
+
+	comparison:
+		No documents are same even when the word "greenhouse" is common in both queries.
+
+- Query 7 vs 8: greenhouse apples apple vs green house apples apple
+
+	Q7 results:
+		7 Q0 List_of_bacon_dishes 1 -23.62621915522039 LMDirichlet
+		7 Q0 Food_miles 2 -25.672510840419683 LMDirichlet
+		7 Q0 Tanbark 3 -27.058765160746255 LMDirichlet
+		7 Q0 Julia_Gillard 4 -28.34144905694432 LMDirichlet
+		7 Q0 Ticker_symbol 5 -28.880538070092786 LMDirichlet
+
+	Q7 results:
+		8 Q0 List_of_bacon_dishes 1 -32.09055841478627 LMDirichlet
+		8 Q0 Julia_Gillard 2 -34.21948820119957 LMDirichlet
+		8 Q0 Tanbark 3 -34.57665736340495 LMDirichlet
+		8 Q0 Food_miles 4 -35.327281068410834 LMDirichlet
+		8 Q0 Ticker_symbol 5 -36.99213394135465 LMDirichlet
+
+	comparison:
+		All documnets are same, because the two queries are almost similar.

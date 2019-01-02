@@ -1,0 +1,9 @@
+how the merging works :
+	
+	1) first we generate all urls for all 3 links and this gives us 3 different node lists.
+	2) we now iterate on all 3 lists together as each of them is in order of highest importance of links to lowest as we are slowly going away from top of the page to bottom by traversing breadth first i.e we are using BFS for traversal.
+	3)then we take links from each file one by one and add them to the file alternatively as this will maintain the roder as mentioned in part D of question 1.
+
+	you can refer to code in file "task2.py" this is the file that creates the file as needed.
+
+	to run this file run python task2.py and it will generate a file named: merged_file_q2.txt
